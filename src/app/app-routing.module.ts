@@ -1,8 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { SellerComponent } from './seller/seller.component';
+import { SellerPendingOrderComponent } from './seller/seller-pending-order/seller-pending-order.component';
+import { SellerTransactionHistoryComponent } from './seller/seller-transaction-history/seller-transaction-history.component';
+import { AppComponent } from './app.component';
 
-
-const routes: Routes = [];
+const routes: Routes = [
+  {path: '', component: AppComponent, pathMatch: 'full'},
+  {path: 'seller', component: SellerComponent},
+  {path: 'seller/pending-order', component: SellerPendingOrderComponent},
+  {path: 'seller/transaction-history', component: SellerTransactionHistoryComponent},
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
