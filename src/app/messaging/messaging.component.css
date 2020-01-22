@@ -1,0 +1,13 @@
+:host {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background-color: aqua ;
+    padding : (10,10,10,10)
+  }
+  p{
+      height: 200px;
+      width: 300px;
+      overflow: auto;
+      word-break: break-all;
+  }

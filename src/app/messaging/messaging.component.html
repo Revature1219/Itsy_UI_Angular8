@@ -1,0 +1,13 @@
+<h3>Texting app</h3>
+<div>
+  <div id='scrollMe'>
+    <p>{{output}}</p>
+  </div>
+  <div>
+    <textarea [(ngModel)]="message" rows="2" cols="35"></textarea>
+  </div>
+</div>
+<div>
+  <button (click)="send()">Send</button>
+  <button (click)="cancel()">Cancel</button>
+</div>

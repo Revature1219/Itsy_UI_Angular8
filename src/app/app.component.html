@@ -536,3 +536,5 @@
 
 
 <router-outlet></router-outlet>
+<a [routerLink]="[{ outlets: { popup: ['contact'] } }]">Messaging</a>
+<router-outlet name="popup"></router-outlet>
