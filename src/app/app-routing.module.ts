@@ -4,10 +4,12 @@ import { SellerComponent } from './seller/seller.component';
 import { SellerPendingOrderComponent } from './seller/seller-pending-order/seller-pending-order.component';
 import { SellerTransactionHistoryComponent } from './seller/seller-transaction-history/seller-transaction-history.component';
 import { AppComponent } from './app.component';
+import { SellerAddComponent } from './seller/seller-add/seller-add.component';
 
 const routes: Routes = [
   {path: '', component: AppComponent, pathMatch: 'full'},
   {path: 'seller', component: SellerComponent},
+  {path: 'seller/add', component: SellerAddComponent},
   {path: 'seller/pending-order', component: SellerPendingOrderComponent},
   {path: 'seller/transaction-history', component: SellerTransactionHistoryComponent},
 ];
