@@ -15,15 +15,15 @@
                 </div>
                 <div class="form-group">
                     <label for="itemDetails">Item Details</label>
-                    <textarea mdbInput type="text" class="form-control" name="itemDetails"></textarea>
+                    <textarea mdbInput type="text" class="form-control" name="itemDetails" required></textarea>
                 </div>
                 <label for="itemImage">Item Image</label>
                 <div class="custom-file mb-4">
-                    <input type="file" class="custom-file-input" name="itemImage">
-                    <label class="custom-file-label" for="itemImage">Choose Item Image</label>
+                    <input type="file" id="file-upload" name="itemImage" required accept="image/*">
+                    <div id="file-upload-filename"></div>
                 </div>
                 <div class="float-right">
-                    <button type="submit" mdbBtn class="btn btn-success" style="width: 100px;">Save</button>
+                    <button type="submit" mdbBtn class="btn btn-success" style="width: 100px;">Add Item</button>
                 </div>
             </form>
         </div>

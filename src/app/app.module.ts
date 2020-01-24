@@ -11,6 +11,7 @@ import { SellerTransactionHistoryComponent } from './seller/seller-transaction-h
 import { SellerAddComponent } from './seller/seller-add/seller-add.component';
 import { SellerEditComponent } from './seller/seller-edit/seller-edit.component';
 import { SellerItemComponent } from './seller/seller-item/seller-item.component';
+import { SellerMessageComponent } from './seller-message/seller-message.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SellerItemComponent } from './seller/seller-item/seller-item.component'
     SellerTransactionHistoryComponent,
     SellerAddComponent,
     SellerEditComponent,
-    SellerItemComponent
+    SellerItemComponent,
+    SellerMessageComponent
   ],
   imports: [
     BrowserModule,
